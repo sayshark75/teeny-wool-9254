@@ -1,0 +1,100 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#adminNavbar {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#adminMain {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#adminFormData {
+  margin: 10px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+}
+#adminFormData input {
+  padding: 5px 5px;
+  margin: 5px 0;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 300ms;
+}
+#adminFormData input:hover {
+  transition: 300ms;
+  box-shadow: rgba(0, 255, 51, 0.24) 0px 3px 8px;
+}
+#adminFormData select {
+  padding: 5px 5px;
+  width: 170px;
+  margin: 5px 0;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 300ms;
+}
+#adminFormData select:hover {
+  transition: 300ms;
+  background-color: rgb(185, 185, 185);
+}
+#adminSubmitButtons button {
+  padding: 5px 5px;
+  margin: 20px 0;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 300ms;
+}
+#adminSubmitButtons button:hover {
+  transition: 300ms;
+  box-shadow: rgba(97, 1, 176, 0.563) 0px 3px 8px;
+}
+
+#adminContainer {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+.item {
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.item > button {
+  padding: 5px 5px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 300ms;
+}
+.item > button:hover {
+  transition: 300ms;
+  background: red;
+  color: white;
+}
+.item > img {
+  width: 100%;
+}
