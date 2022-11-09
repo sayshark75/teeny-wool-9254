@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/admin.css" />
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    <div id="adminNavbar">
+      <h2>My Fashion Cart</h2>
+      <h2>Admin Panel</h2>
+      <h2>User : <span>Sayyed Sharuk</span></h2>
+    </div>
+    <div id="adminMain">
+      <div id="adminFormData">
+        <p>Add / Update Product</p>
+        <input type="text" id="name" placeholder="Product Name" />
+        <input type="text" id="description" placeholder="Description" />
+        <input type="number" id="price" placeholder="Product Price" />
+        <select id="type" name="types">
+          <option value="cloths">Cloths</option>
+          <option value="bags">Bags</option>
+          <option value="jewelry">Jewelry</option>
+          <option value="shoes">Shoes</option>
+          <option value="accessories">Accessories</option>
+        </select>
+        <input type="text" id="image" placeholder="Image URL" />
+        <div id="adminSubmitButtons">
+          <button id="addMen">Add to Mens Data</button>
+          <!-- <button id="addWomen">Add Womens</button> -->
+          <button id="restoreData">Restore All Data</button>
+        </div>
+      </div>
+      <div id="adminContainer"></div>
+    </div>
+  </body>
+</html>
+<script type="module" src="./src/admin.js"></script>

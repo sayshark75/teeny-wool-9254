@@ -3,3 +3,4 @@ import { faIcons, bootStrap5 } from "../Scripts/headLinks.js";
 ////////// Always use Free FA-Icons
 document.head.insertAdjacentHTML("afterbegin",faIcons());
 document.head.insertAdjacentHTML("afterbegin",bootStrap5());
+
