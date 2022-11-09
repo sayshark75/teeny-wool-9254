@@ -1,0 +1,554 @@
+#belownav{
+    margin: auto;
+    border: 1px solid white;
+    
+  
+    
+    background-image: url("../Images/background.jpg");
+    
+    
+    width: 87%;
+    height: 600px;
+    
+    object-fit: cover;
+    
+}
+#belownavtop{
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    
+    cursor: pointer;
+
+    border: 0px solid green;
+    margin-left: 67%;
+   margin-top: 14%;
+}
+#belownavmiddle{
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    color: #ffffff;
+    line-height: 65px;
+    
+    cursor: pointer;
+
+    border: 0px solid green;
+    margin-left: 55%;
+   margin-top: 4%;
+
+
+}
+
+#belownavmiddlesecond{
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    color: #ffffff;
+    line-height: 65px;
+    
+    cursor: pointer;
+
+    border: 0px solid green;
+    margin-left: 68%;
+   margin-top: 1%;
+}
+
+#belownavlow{
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 17px;
+    
+    cursor: pointer;
+
+    border: 0px solid green;
+    margin-left: 82%;
+   margin-top: 3%;
+   width: 150px;
+   height: 30px;
+   padding: 5px;
+   background-color: #ffffff;
+   color: black;
+}
+
+#dontmiss{
+    margin: auto;
+    border: 1px solid white;
+    
+  width: 87%;
+    height: 300px;
+    background-color: #f6f6f6;
+}
+#dontmisstop{
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    
+    cursor: pointer;
+
+    border: 0px solid green;
+    width: 180px;
+    margin-left: 40%;
+   margin-top: 3%;
+   text-align: center;
+}
+#dontmissmiddle{
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    color: #000000;
+    line-height: 44px;
+    
+    cursor: pointer;
+
+    border: 0px solid green;
+    width: 250px;
+    margin-left: 37%;
+   margin-top: 3%;
+   text-align: center;
+}
+#dontmissmiddlesecond{
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    line-height: 22px;
+    
+    cursor: pointer;
+
+    border: 0px solid green;
+    width:450px;
+    margin-left: 28%;
+   margin-top: 3%;
+   text-align: center;
+}
+#dontmisslow{
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 17px;
+    
+    cursor: pointer;
+
+    border: 0px solid green;
+    margin-left: 41%;
+   margin-top: 3%;
+   width: 140px;
+   height: 30px;
+   padding: 7px;
+   background-color: black;
+   color: #ffffff;
+}
+
+#onlyheading{
+    margin: auto;
+    border: 0px solid green;
+    
+  width: 87%;
+    height: 150px;
+    display: flex;
+    gap: 8px;
+    
+}
+
+#onlyleft{
+    border: 0px solid blue;
+    width: 49%;
+}
+#onlyleftone{
+    border: 0px solid blue;
+    width: 90%;
+    text-align: center;
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #000000;
+    margin: auto;
+}
+#onlyleftsecond{
+    border: 0px solid blue;
+    width: 90%;
+    text-align: center;
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 44px;
+    color: #000000;
+    margin: auto;
+}
+#onlyright{
+    border: 0px solid blue;
+    width: 49%;
+}
+#onlyrightone{
+    border: 0px solid blue;
+    width: 90%;
+    text-align: center;
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #000000;
+    margin: auto;
+}
+
+#onlyrightsecond{
+    border: 0px solid blue;
+    width: 90%;
+    text-align: center;
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 44px;
+    color: #000000;
+    margin: auto;
+}
+    
+#firstsection{
+    margin: auto;
+    border: 0px solid green;
+    
+  width: 87%;
+    height: auto;
+    display: flex;
+    gap: 8px;
+    
+}
+#firstsecleft{
+  border: 0px solid blue;
+  width: 49%;
+}
+#firstsecleft img{
+    
+    width: 98%
+  }
+
+  #firstsecright{
+    border: 0px solid blue;
+    width: 50%;
+  }
+  #firstsecright img{
+   
+    width: 100%;
+  }
+  #secright{
+   
+        font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        color: #ffffff;
+        line-height: 17px;
+        
+        cursor: pointer;
+    
+        border: 0px solid green;
+        margin-left: 38%;
+       margin-top: 3%;
+       width: 140px;
+       height: 30px;
+       padding: 7px;
+       background-color: black;
+       color: #ffffff;
+   
+  }
+
+  #secrightone{
+    border: 0px solid blue;
+    width: 90%;
+    text-align: center;
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #000000;
+    margin: auto;
+}
+
+#secrighttwo{
+    border: 0px solid blue;
+    width: 90%;
+    text-align: center;
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 44px;
+    color: #000000;
+    margin: auto;
+}
+
+#belowfirstsec{
+    margin: auto;
+    border: 0px solid green;
+    
+  width: 87%;
+    height: 100px;
+    display: flex;
+    gap: 8px;
+}
+
+#belowsecone{
+    
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 17px;
+    cursor: pointer;
+
+    border: 0px solid green;
+    margin-left: 18%;
+   margin-top: 3%;
+   width: 140px;
+   height: 30px;
+   padding: 7px;
+   background-color: black;
+   color: #ffffff;
+}
+#belowsectwo{
+    
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 17px;
+    cursor: pointer;
+
+    border: 0px solid green;
+    margin-left: 37%;
+   margin-top: 3%;
+   width: 140px;
+   height: 30px;
+   padding: 7px;
+   background-color: black;
+   color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+#onlyhead{
+    margin: auto;
+    border: 0px solid green;
+    
+  width: 87%;
+    height: 150px;
+    display: flex;
+    gap: 8px;
+    
+}
+
+#headleft{
+    border: 0px solid blue;
+    width: 49%;
+}
+#headleftone{
+    border: 0px solid blue;
+    width: 90%;
+    text-align: center;
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #000000;
+    margin: auto;
+}
+#headleftsecond{
+    border: 0px solid blue;
+    width: 90%;
+    text-align: center;
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 44px;
+    color: #000000;
+    margin: auto;
+}
+#headright{
+    border: 0px solid blue;
+    width: 49%;
+}
+#headrightone{
+    border: 0px solid blue;
+    width: 90%;
+    text-align: center;
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #000000;
+    margin: auto;
+}
+
+#headrightsecond{
+    border: 0px solid blue;
+    width: 90%;
+    text-align: center;
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 44px;
+    color: #000000;
+    margin: auto;
+}
+.hrr{
+    width: 88%;
+    margin: auto;
+   
+}
+
+
+
+
+#secondsection{
+    margin: auto;
+    border: 0px solid green;
+    
+  width: 87%;
+    height: auto;
+    display: flex;
+    gap: 8px;
+    
+}
+#secondsecright{
+  border: 0px solid blue;
+  width: 49%;
+}
+#secondsecright img{
+    
+    width: 99%;
+    margin-left: 10px;
+  }
+
+  #secondsecleft{
+    border: 0px solid blue;
+    width: 50%;
+  }
+  #secondsecleft img{
+   
+    width: 100%;
+  }
+  #secondleft{
+   
+        font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        color: #ffffff;
+        line-height: 17px;
+        
+        cursor: pointer;
+    
+        border: 0px solid green;
+        margin-left: 38%;
+       margin-top: 3%;
+       width: 140px;
+       height: 30px;
+       padding: 7px;
+       background-color: black;
+       color: #ffffff;
+   
+  }
+
+  #secondleftone{
+    border: 0px solid blue;
+    width: 90%;
+    text-align: center;
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #000000;
+    margin: auto;
+}
+
+#secondlefttwo{
+    border: 0px solid blue;
+    width: 90%;
+    text-align: center;
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 44px;
+    color: #000000;
+    margin: auto;
+}
+
+#belowsecondsec{
+    margin: auto;
+    border: 0px solid green;
+    
+  width: 87%;
+    height: 100px;
+    display: flex;
+    gap: 8px;
+}
+
+#belowsecondone{
+    
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 17px;
+    cursor: pointer;
+
+    border: 0px solid green;
+    margin-left: 20%;
+   margin-top: 3%;
+   width: 140px;
+   height: 30px;
+   padding: 7px;
+   background-color: black;
+   color: #ffffff;
+}
+#belowsecondtwo{
+    
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 17px;
+    cursor: pointer;
+
+    border: 0px solid green;
+    margin-left: 40%;
+   margin-top: 3%;
+   width: 140px;
+   height: 30px;
+   padding: 7px;
+   background-color: black;
+   color: #ffffff;
+}
+
