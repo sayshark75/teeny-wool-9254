@@ -1,0 +1,90 @@
+#footer{
+    margin: auto;
+    border: 0px solid green;
+    
+  width: 87%;
+    height: 300px;
+    display: flex;
+    gap: 15px;
+}
+#footer>div{
+    border: 0px solid blue;
+    width: 20%;
+    padding: 5px;
+}
+
+.h{
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        cursor: pointer;
+}
+.f{
+    font-family:  Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        cursor: pointer;
+}
+.d{
+    margin-top: -12px;
+    font-family:  Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #757575;
+        cursor: pointer;
+}
+.a{
+    font-family:  Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #757575;
+        margin: 8px;
+        cursor: pointer;
+        
+}
+.a:hover{
+    color: black;
+}
+#like:hover{
+    color: aqua;
+}
+
+#bottom{
+    margin: auto;
+    border: 0px solid green;
+    
+  width: 87%;
+    height: 50px;
+   padding: 5px;
+    gap: 15px;
+}
+#bottom >div{
+    border: 0px solid blue;
+    height: 30px;
+    
+}
+#bottom img{
+    cursor: pointer;
+}
+
+#last{
+    margin: auto;
+    border: 0px solid green;
+    
+  width: 87%;
+    height: 50px;
+   padding: 5px;
+    gap: 15px;
+    display: flex;
+}
+#last >div{
+    border: 0px solid blue;
+    height: 30px;
+    width: 50%;
+    color: #757575;
+    
+}

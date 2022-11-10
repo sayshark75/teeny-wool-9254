@@ -1,0 +1,171 @@
+@import url("./navbar.css");
+@import url("./footer.css");
+.fa-regular{
+  color: rgb(198, 198, 198);
+}
+/* Middle Section */
+#wishContainer{
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+/* Filter Section */
+#wishFilter{
+  flex: 3;
+  padding: 10px;
+}
+#wishFilterHead{
+  font-size: 15px;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+}
+.wishFilterBody{
+  font-size: 14px;
+  color: gray;
+  font-family: sans-serif;
+  transition: 300ms;
+  cursor: pointer;
+}
+.wishFilterBody:hover{
+  color: black;
+  transition: 300ms;
+}
+
+/* Wish Empty Section */
+#wishEmpty{
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#wishEmptyTitle{
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+#wishEmptyDesc{
+  font-size: 14px;
+  color: gray;
+}
+#wishEmptyBtn{
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+  transition: 500ms;
+}
+#wishEmptyBtn:hover{
+  background-color: rgb(179, 179, 179);
+  transition: 500ms;
+}
+
+/* Items Section */
+#wishItems{
+  flex: 8;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.wishCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  text-align: center;
+}
+.wishCardTop{
+  display: flex;
+  justify-content: flex-end;
+}
+.fa-xmark{
+  font-size: 18px;
+}
+.wishCardImage{
+  width: 100%;
+}
+.wishCardName{
+  font-size: 15px;
+}
+.wishCardDesc{
+  color: gray;
+  transition: 300ms;
+  cursor: pointer;
+}
+.wishCardDesc:hover{
+  color: black;
+  transition: 300ms;
+}
+.wishCardPrice{
+  font-weight: 700;
+  font-size: 14px;
+}
+.wishCardMoveToBag{
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+  padding: 8px;
+  transition: 500ms;
+}
+.wishCardMoveToBag:hover{
+  background-color: gray;
+  transition: 500ms;
+}
+
+#wishFlex{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.wishChild{
+  width: 48%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+.wishChild img{
+  width: 100%;
+  visibility: hidden;
+}
+.bgImg1{
+  background: no-repeat url("../Images/wishImg1.jpg");
+  background-size: contain;
+}
+.bgImg2{
+  background: no-repeat url("../Images/wishImg2.jpg");
+  background-size: contain;
+}
+.wcTitle{
+  position: absolute;
+  top: 55%;
+  font-size: 26px;
+  color: white;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+}
+.wcBtn{
+  position: absolute;
+  top: 70%;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+  letter-spacing: 3px;
+  padding: 5px 15px;
+  transition: 500ms;
+}
+
+.wcBtn:hover{
+  background-color: gray;
+}
