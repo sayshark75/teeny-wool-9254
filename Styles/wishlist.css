@@ -1,5 +1,5 @@
 @import url("./navbar.css");
-
+@import url("./footer.css");
 .fa-regular{
   color: rgb(198, 198, 198);
 }
@@ -7,14 +7,12 @@
 #wishContainer{
   width: 80%;
   margin: auto;
-  border: 1px solid red;
   display: flex;
 }
 
 /* Filter Section */
 #wishFilter{
   flex: 3;
-  border: 1px solid green;
   padding: 10px;
 }
 #wishFilterHead{
@@ -36,7 +34,6 @@
 /* Wish Empty Section */
 #wishEmpty{
   flex: 8;
-  border: 1px soid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,22 +65,19 @@
 /* Items Section */
 #wishItems{
   flex: 8;
-  border: 1px solid blue;
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 10px;
+  gap: 20px;
 }
 .wishCard{
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   /* align-items: center; */
   text-align: center;
 }
 .wishCardTop{
-  border: 1px solid red;
   display: flex;
   justify-content: flex-end;
 }
@@ -127,14 +121,12 @@
 #wishFlex{
   width: 80%;
   margin: auto;
-  border: 1px solid green;
   display: flex;
   justify-content: space-evenly;
 }
 .wishChild{
   width: 48%;
   position: relative;
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

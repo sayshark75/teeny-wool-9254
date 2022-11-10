@@ -12,43 +12,49 @@
     <div id="navbar"></div>
     <div id="wishContainer">
       <div id="wishFilter">
+        <!-- if this is not in line then Filter will get Error in Accessories and cloth -->
         <p id="wishFilterHead">Filter By Category</p>
-        <p class="wishFilterBody"><i class="fa-regular fa-square"></i> Bags</p>
-        <p class="wishFilterBody">
-          <i class="fa-regular fa-square"></i> Accessories
-        </p>
-        <p class="wishFilterBody">
-          <i class="fa-regular fa-square"></i> Clothing
-        </p>
-        <p class="wishFilterBody"><i class="fa-regular fa-square"></i> Shoes</p>
+        <p class="wishFilterBody" id="bagsSort"><i class="fa-square fa-regular"></i> Bags</p>
+        <p class="wishFilterBody" id="accessoriesSort"><i class="fa-square fa-regular"></i> Accessories</p>
+        <p class="wishFilterBody" id="clothingSort"><i class="fa-square fa-regular"></i> Clothing</p>
+        <p class="wishFilterBody" id="shoesSort"><i class="fa-square fa-regular"></i> Shoes</p>
+        <p class="wishFilterBody" id="jewelrySort"><i class="fa-square fa-regular"></i> Jewelry</p>
         <hr />
       </div>
       <div id="wishEmpty">
-        <!-- When there is Data Present to Append ,Make this Empty -->
+        <!-- When there is Data Present to Append ,Hide this Empty -->
         <p id="wishEmptyTitle">THERE ARE NO PRODUCTS ON YOUR WISHLIST.</p>
         <h5 id="wishEmptyDesc">
           Check out our new arrivals and start adding to your wishlist now!
         </h5>
         <button id="wishEmptyBtn">SHOP NEW ARRIVALS</button>
       </div>
+
       <div id="wishItems">
+
         <!-- wishCards Append Here -->
+
       </div>
+
     </div>
     <hr />
     <div id="wishFlex">
-      <div class="bgImg1 wishChild ">
-        <img src="./Images/wishImg1.jpg" alt="">
+      <div class="bgImg1 wishChild">
+        <img src="./Images/wishImg1.jpg" alt="" />
         <p class="wcTitle">STATEMENT BLAZERS</p>
-        <button class="wcBtn">SHOP NOW<i class="fa-solid fa-angles-right"></i></button>
+        <button class="wcBtn">
+          SHOP NOW<i class="fa-solid fa-angles-right"></i>
+        </button>
       </div>
       <div class="bgImg2 wishChild">
-        <img src="./Images/wishImg2.jpg" alt="">
+        <img src="./Images/wishImg2.jpg" alt="" />
         <p class="wcTitle">STATEMENT BLAZERS</p>
-        <button class="wcBtn">SHOP NOW<i class="fa-solid fa-angles-right"></i></button>
+        <button class="wcBtn">
+          SHOP NOW<i class="fa-solid fa-angles-right"></i>
+        </button>
       </div>
     </div>
-    <hr />
+    <hr id="endOfWishPage" />
 
     <!-- //////Bootstrap 5 Script, Do not Modify -->
     <script
