@@ -98,6 +98,27 @@
   width: 18px;
   margin-left: 100px;
 }
+
+#changeText {
+  border: 1px solid green;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+#elem {
+  font-size: 14px;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial,
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  color: red;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.hide {
+  opacity: 0 !important;
+}
+
 #hr {
   margin-top: -3px;
 }

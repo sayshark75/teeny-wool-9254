@@ -25,6 +25,44 @@
   font-size: 14px;
   color: gray;
   font-family: sans-serif;
+  transition: 300ms;
+  cursor: pointer;
+}
+.wishFilterBody:hover{
+  color: black;
+  transition: 300ms;
+}
+
+/* Wish Empty Section */
+#wishEmpty{
+  flex: 8;
+  border: 1px soid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#wishEmptyTitle{
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+#wishEmptyDesc{
+  font-size: 14px;
+  color: gray;
+}
+#wishEmptyBtn{
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+  transition: 500ms;
+}
+#wishEmptyBtn:hover{
+  background-color: rgb(179, 179, 179);
+  transition: 500ms;
 }
 
 /* Items Section */
@@ -86,22 +124,56 @@
   transition: 500ms;
 }
 
-
 #wishFlex{
   width: 80%;
   margin: auto;
-  height: 200px;
   border: 1px solid green;
   display: flex;
   justify-content: space-evenly;
 }
-#wishChild1{
-  height: 200px;
+.wishChild{
   width: 48%;
+  position: relative;
   border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
 }
-#wishChild2{
-  height: 200px;
-  width: 48%;
-  border: 1px solid yellow;
+.wishChild img{
+  width: 100%;
+  visibility: hidden;
+}
+.bgImg1{
+  background: no-repeat url("../Images/wishImg1.jpg");
+  background-size: contain;
+}
+.bgImg2{
+  background: no-repeat url("../Images/wishImg2.jpg");
+  background-size: contain;
+}
+.wcTitle{
+  position: absolute;
+  top: 55%;
+  font-size: 26px;
+  color: white;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+}
+.wcBtn{
+  position: absolute;
+  top: 70%;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+  letter-spacing: 3px;
+  padding: 5px 15px;
+  transition: 500ms;
+}
+
+.wcBtn:hover{
+  background-color: gray;
 }

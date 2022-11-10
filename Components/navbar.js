@@ -50,7 +50,27 @@ const navbar = () => {
   </div>
 </div>
 
-<hr id="hr" />`
-}
+<hr id="hr" />
+    <div id="changeText">
+      <p id="elem">Get 10% off your first order when you spend over €600</p>
+    </div>`;
+};
 
-export {navbar};
+const navbarSrc = () => {
+  let elem = document.getElementById("elem");
+  setInterval(change, 6000);
+
+  function change() {
+    elem.classList.add("hide");
+    setTimeout(function () {
+      elem.innerText =
+        elem.innerText ===
+        "Get 10% off your first order when you spend over €600"
+          ? "Use code WELCOME10 for 10% off selected full-price items"
+          : "Get 10% off your first order when you spend over €600";
+      elem.classList.remove("hide");
+    }, 500);
+  }
+};
+
+export { navbar, navbarSrc };
