@@ -33,12 +33,7 @@
     color: gray;
     width: 5px;
 }
-#right_type option{
-    /* border: 10px; */
-}
-#tuy{
-    /* border: 10px; */
-}
+
 #select{
     border: 0px;
     width: 80px;
@@ -108,9 +103,7 @@ section h6{
     /* border: 1px solid red; */
     cursor: pointer;
 }
-.category{
-   
-}
+
 #cat_{
     /* border: 1px solid red; */
     display: flex;
