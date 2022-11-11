@@ -280,6 +280,10 @@ const checkLSData = () => {
     document.getElementById("wishItems").style.display = "grid";
     document.getElementById("wishFilter").style.display = "block";
     document.getElementById("wishEmpty").style.display = "none";
+  }else{
+    document.getElementById("wishItems").style.display = "none";
+    document.getElementById("wishFilter").style.display = "none";
+    document.getElementById("wishEmpty").style.display = "flex";
   }
 }
 checkLSData();

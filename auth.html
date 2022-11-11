@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth Page</title>
+    <link rel="stylesheet" href="./Styles/auth.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <!-- Registration Here -->
+    <div id="authContainer">
+      <div id="authRegister">
+        <p class="authRegHead">CREATE AN ACCOUNT</p>
+        <p>Please enter the following information to create your account.</p>
+        <form id="authRegForm">
+          <div id="authInputsContainer">
+            <input id="nameIp"
+              class="authInputs"
+              type="text"
+              placeholder="Name *"
+              required
+            />
+            <input
+            id="userNameIp"
+              class="authInputs"
+              type="text"
+              placeholder="Username *"
+              required
+            />
+            <input
+            id="mobileIp"
+              class="authInputs"
+              type="text"
+              placeholder="Mobile *"
+              required
+            />
+            <input
+            id="emailIp"
+              class="authInputs"
+              type="text"
+              placeholder="Email address *"
+              required
+            />
+            <input
+            id="passwordIp"
+              class="authInputs"
+              type="password"
+              placeholder="Password *"
+              required
+            />
+            <input
+            id="cpasswordIp"
+              class="authInputs"
+              type="password"
+              placeholder="Confirm password *"
+              required
+            />
+          </div>
+
+          <div id="authAgreementContainer">
+            <input type="checkbox" required />
+            <p>
+              From now on I will receive the Mytheresa Newsletter with selected
+              fashion offers. If I do not wish to receive the newsletter, I can
+              unsubscribe at any time free of charge at privacy@mytheresa.com.
+            </p>
+          </div>
+          <p id="authAgreement2">
+            I agree that Mytheresa may insert analytical web beacons into the
+            newsletter and create a personalized user profile based on my
+            purchase and usage behavior, including sending a notification when I
+            have placed something in the shopping cart. Further details can be
+            found in our Privacy Policy, clause 5. I understand that I can
+            revoke my consent at any time by emailing privacy@mytheresa.com.
+          </p>
+          <p class="requiredField">* required fields</p>
+          <!-- <input id="authRegSubmitBtn" type="submit" value="REGISTER" /> -->
+          <button type="submit" id="authRegSubmitBtn">REGISTER</button>
+        </form>
+      </div>
+      <!-- mid Line Here -->
+      <div id="authMidLine"></div>
+
+      <!-- Login Section Here -->
+      <div id="authLogin">
+        <p class="authRegHead">ALREADY REGISTERED?</p>
+        <p>If you have an account with us, please log in.</p>
+        <form id="authLogForm">
+          <input
+            class="authInputs"
+            type="text"
+            placeholder="Username *"
+            required
+          />
+          <input
+            class="authInputs"
+            type="password"
+            placeholder="Password *"
+            required
+          />
+          <p class="requiredField">* required fields</p>
+          <a id="authForgotPass" class="requiredField" href="#"
+            >Forgot Password</a
+          >
+          <div id="authLogBtnsContainer">
+          <input class="authLogSubmitBtn" type="submit" name="submit" value="Login">
+          <input class="authLogSubmitBtn" type="submit" name="submit" value="Login as Admin">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <br id="lastEnd"/>
+
+    <!-- //////Bootstrap 5 Script, Do not Modify -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- //////LottieFiles Script -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>
+<script type="module" src="./Src/auth.js"></script>

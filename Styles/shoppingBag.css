@@ -5,7 +5,6 @@
 #sbTitle{
   width: 80%;
   margin: auto;
-  border: 1px solid red;
   display: flex;
   justify-content: flex-start;
   
@@ -17,12 +16,11 @@
 #sbCheckout{
   width: 80%;
   margin: auto;
-  border: 1px solid red;
   display: flex;
   justify-content: flex-end;
 }
 
-#sbCheckoutBtn{
+.sbCheckoutBtn{
   border: none;
   outline: none;
   background-color: black;
@@ -34,7 +32,7 @@
   transition: 500ms;
 }
 
-#sbCheckoutBtn:hover{
+.sbCheckoutBtn:hover{
   background-color: gray;
   transition: 500ms;
 }
@@ -55,7 +53,126 @@
   font-size: 14px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#newLine{
+.newLine{
   width: 80%;
   margin: auto;
+}
+
+/* Cards Designing */
+#sbAppendCards{
+  width: 80%;
+  margin: auto;
+}
+/* main Card */
+.sbCards{
+  width: 100%;
+  display: flex;
+}
+/* section 1 */
+.sbProdSection{
+  flex: 6;
+  gap: 20px;
+  padding: 10px;
+  display: flex;
+}
+.sbImgHolder{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sbImg{
+  width: 50%;
+}
+.sbDataHolder{
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.sbNameText{
+  font-weight: 100;
+  font-size: 14px;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+}
+.sbDescText{
+  color: gray;
+}
+.sbRemoveBtn{
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+  padding: 5px 15px;
+  transition: 500ms;
+}
+.sbRemoveBtn:hover{
+  background-color: gray;
+  transition: 500ms;
+}
+
+.sbDataHolder{
+  flex: 2;
+}
+
+/* section 2 */
+.sbCalcSection{
+  padding-top:20px ;
+  flex: 7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.sbCalcSection>div{
+  flex: 4;
+}
+.sbPriceVal{
+  margin-right: 3%;
+  flex: 1;
+  font-size: 14px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* calculationSection */
+#sbCalculationSection{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+#sbCalculationSection>p{
+  margin-right: 30px;
+  color: gray;
+}
+#sbCalculationSection>p:nth-child(3){
+  color: black;
+}
+
+#sbLastBtns{
+  padding: 0 20px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#sbContinueShopping{
+  border: none;
+  outline: none;
+  background-color: rgb(221, 221, 221);
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+  padding: 8px;
+  transition: 500ms;
+}
+#sbContinueShopping:hover{
+  background-color: gray;
+  transition: 500ms;
 }

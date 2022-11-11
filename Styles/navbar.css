@@ -104,6 +104,13 @@
   text-align: center;
   margin: auto;
   color: red;
+  opacity: 1;
+  transition: 500ms;
+}
+
+.hide{
+  opacity: 0 !important;
+  transition: 500ms;
 }
 
 #hr {
