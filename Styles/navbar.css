@@ -99,7 +99,12 @@
   margin-left: 100px;
 }
 
-
+#changeText{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  color: red;
+}
 
 #hr {
   margin-top: -3px;
