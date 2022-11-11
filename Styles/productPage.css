@@ -71,7 +71,7 @@
 }
 #right_product div{
     border: 1px solid black;
-    height: 400px;
+     text-align: center;
 }
 #bottom_page button{
 border: none;
