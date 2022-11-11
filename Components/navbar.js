@@ -57,8 +57,8 @@ const navbar = () => {
 };
 
 const navbarSrc = () => {
-  let elem = document.getElementById("elem");
-  setInterval(change, 6000);
+  let elem = document.getElementById("changeText");
+  setInterval(change, 5000);
 
   function change() {
     elem.classList.add("hide");
