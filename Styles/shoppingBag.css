@@ -1,0 +1,61 @@
+@import url("./navbar.css");
+@import url("./footer.css");
+
+/* Title Section */
+#sbTitle{
+  width: 80%;
+  margin: auto;
+  border: 1px solid red;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+#sbPara{
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial;
+}
+/* Checkout Btn section */
+#sbCheckout{
+  width: 80%;
+  margin: auto;
+  border: 1px solid red;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#sbCheckoutBtn{
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+  padding: 8px;
+  transition: 500ms;
+}
+
+#sbCheckoutBtn:hover{
+  background-color: gray;
+  transition: 500ms;
+}
+
+/* Price quantity subtotal Bar Section */
+#sbPQS{
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+
+}
+#sbPQS>div{
+  flex: 8;
+}
+#sbPQS>h3{
+  flex: 1;
+  font-size: 14px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#newLine{
+  width: 80%;
+  margin: auto;
+}
