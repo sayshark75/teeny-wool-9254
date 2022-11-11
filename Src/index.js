@@ -10,3 +10,17 @@ document.getElementById("lastEnd").insertAdjacentHTML("afterend",footer());
 
 ///////////Navbar Script
 navbarSrc();
+
+
+
+
+
+let newarrival = document.getElementById("womenpage")
+
+newarrival.addEventListener("click",function(){
+    locationchange()
+})
+
+const locationchange = ()=>{
+    window.location.href="womenproduct.html"
+}

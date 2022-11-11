@@ -1,0 +1,21 @@
+.photo{
+    width: 100%;
+}
+#btnn{
+    font-family:  "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 17px;
+    
+    cursor: pointer;
+
+    border: 0px solid green;
+   
+   width: 150px;
+   height: 30px;
+   padding: 5px;
+   background-color: #000000;
+   
+}
