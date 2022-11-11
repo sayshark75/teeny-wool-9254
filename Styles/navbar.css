@@ -78,7 +78,7 @@
   line-height: 50px;
 }
 
-#bottomline-right {
+#bottomline-right  {
   border: 1px solid gray;
   width: 18%;
   height: 35px;
@@ -91,6 +91,8 @@
   font-size: 13px;
   margin-top: 7px;
 }
+
+
 #bottomline p {
   margin-top: -4px;
 }

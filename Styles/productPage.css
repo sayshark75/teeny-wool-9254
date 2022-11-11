@@ -59,12 +59,12 @@
 }
 #left_filter{
     width: 27%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     
 }
 #right_product{
     width: 69%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
@@ -244,3 +244,39 @@ section h6{
     visibility: hidden;
     /* border: 1px solid red; */
 }
+#uncheck:hover{
+    border: 0px;
+    background-color: gray;
+}
+
+#right_product{
+    text-align: center;
+}
+#right_product p{
+    margin-bottom: 1px;
+}
+/* .tagimg{
+   display: none;
+} */
+#right_product img{
+    width: 100%;
+    height: 70%;
+    
+    }
+    #right_product button{
+width: 45%;
+background-color: gray;
+color: white;
+margin: 5px;
+border: 0px;
+    }
+    #right_product button:hover{
+        background-color: rgb(188, 178, 178);
+        color: rgb(57, 50, 50);
+    }
+    #bottom_page button:hover{
+        color: black;
+    }
+    #right_product div{
+        border: 0px;
+    }

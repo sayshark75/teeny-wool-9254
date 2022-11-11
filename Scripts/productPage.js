@@ -97,18 +97,214 @@ function wrapOn4(){
 // fetching data----------
 // https://calm-beach-52240.herokuapp.com/mensData
 // filtering-----------------
+
 let cate = document.querySelectorAll(".cat_list")
 cate.forEach((el)=>{
     el.addEventListener('click',(e)=>{
-        console.log(e)
+        
         
     e.target.classList.value = "fa-square fa-solid"
-        
+    
     })
 })
-let checked = document.querySelector(".cat_list>i")
-console.log(checked.length)
+
+
 let uncheck = document.getElementById("uncheck")
-uncheck.addEventListener("click",function(){
-console.log("y")
-})
+uncheck.addEventListener("click",uncheckAll)
+function uncheckAll(){
+  window.location.reload()
+}
+
+// fetching data----------------
+// const getmyData = async()=>{
+//     try {
+//         let res = await fetch("https://calm-beach-52240.herokuapp.com/womensData?_limit=18");
+//         let data = await res.json()
+//         console.log(data)
+//         append(data)
+//     } catch (error) {
+//         console.log(error) 
+//     }
+// } 
+// getmyData()
+const append=async (data)=>{
+   
+    let container = document.getElementById("right_product")
+    data.forEach((el)=>{
+        let {name,price,description,image}=el
+        let div = document.createElement("div")
+     
+        let img = document.createElement("img")
+        
+        img.src = image
+        let brand_name = document.createElement("p")
+        brand_name.innerText=name
+        let brand_desc = document.createElement("p")
+        brand_desc.innerText=description
+        brand_desc.style.color="gray"
+        let pro_price=document.createElement("p")
+        pro_price.innerText= "$"+price
+        pro_price.style.fontWeight="bold"
+        let bag_btn = document.createElement("button")
+        bag_btn.innerText="Add to bag"
+        bag_btn.onclick=()=>{
+            addToBag(el)
+        }
+        
+        let wish_btn = document.createElement("button")
+        wish_btn.innerText="Add to wishlist"
+        wish_btn.onclick=()=>{
+            addToWish(el)
+        }
+        
+        div.append(img,brand_name,brand_desc,pro_price,bag_btn,wish_btn)
+        container.append(div)
+    })
+}
+
+// pagination----------------
+let post = document.getElementById("right_product")
+let btn_div = document.getElementById("bottom_page")
+const getDATA = async(clicked_button,limit)=>{
+    let res = await fetch(`https://calm-beach-52240.herokuapp.com/mensData`)
+    let data = await res.json()
+    
+    createButtons(data.length,18)
+    
+    
+}
+const getpageDATA = async(clicked_button,limit)=>{
+    post.innerHTML=null;
+   
+    let res = await fetch(`https://calm-beach-52240.herokuapp.com/mensData?_page=${clicked_button}&_limit=${limit}`)
+    let data = await res.json()
+    
+    append(data,post)
+    // clicked_button.style.color="blue"
+    
+    
+}
+getDATA()
+getpageDATA(1,18)
+
+const createButtons=(total_images,images_per_page)=>{
+    const buttons = Math.ceil( total_images/images_per_page);
+    for(let i =1;i<=buttons;i++){
+        let btn = document.createElement("button");
+        btn.id=i;
+        btn.innerText=i;
+        btn.onclick=()=>{
+            getpageDATA(i,18)
+
+        }
+        btn_div.append(btn)
+    }
+
+}
+
+// --------------add to bag------
+
+let arr=JSON.parse(localStorage.getItem("shoppingBag"))||[]
+function addToBag(el){
+    
+    
+    
+    
+    arr.push(el)
+    
+    localStorage.setItem("shoppingBag",JSON.stringify(arr))
+}
+
+// ----------------add to wish----------
+let arr2 = JSON.parse(localStorage.getItem("lsDataKey"))||[]
+function addToWish(el){
+    arr2.push(el)
+    localStorage.setItem("lsDataKey",JSON.stringify(arr2))
+}
+
+// sorting--------------------
+
+let select = document.getElementById("select")
+select.onchange = lowToHigh;
+function lowToHigh(){
+    if(this.value === "lowh"){
+       lh()
+    }
+    else if(this.value === "highl"){
+       hl()
+    }
+    else if(this.value === "newl"){
+        console.log("no")
+    }
+    else if(this.value === "default"){
+        random()
+    }
+    
+}
+const lh=async()=>{
+    post.innerHTML=null;
+    let res = await fetch(`https://calm-beach-52240.herokuapp.com/mensData?_sort=price&_order=asc`)
+    let data = await res.json()
+    append(data)
+}
+const hl=async()=>{
+    post.innerHTML=null;
+    let res = await fetch(`https://calm-beach-52240.herokuapp.com/mensData?_sort=price&_order=desc`)
+    let data = await res.json()
+    append(data)
+}
+const random=async()=>{
+    post.innerHTML=null;
+    let res = await fetch(`https://calm-beach-52240.herokuapp.com/mensData`)
+    let data = await res.json()
+    append(data)
+}
+
+// filtering-----------------
+let bag= document.getElementById("bags")
+bag.onclick=()=>{
+filterBag()
+}
+const filterBag=async()=>{
+    console.log("y")
+    post.innerHTML=null;
+    let res = await fetch(`https://calm-beach-52240.herokuapp.com/mensData?type=bags`)
+    let data = await res.json()
+    append(data)
+}
+
+let cloth= document.getElementById("cloth")
+cloth.onclick=()=>{
+filterCloth()
+}
+const filterCloth=async()=>{
+    console.log("y")
+    post.innerHTML=null;
+    let res = await fetch(`https://calm-beach-52240.herokuapp.com/mensData?type=cloths`)
+    let data = await res.json()
+    append(data)
+}
+
+let shoes= document.getElementById("shoes")
+shoes.onclick=()=>{
+filterShoes()
+}
+const filterShoes=async()=>{
+    console.log("y")
+    post.innerHTML=null;
+    let res = await fetch(`https://calm-beach-52240.herokuapp.com/mensData?type=shoes`)
+    let data = await res.json()
+    append(data)
+}
+
+let acc= document.getElementById("filter_acc")
+acc.onclick=()=>{
+    filteracc()
+}
+const filteracc=async()=>{
+    console.log("y")
+    post.innerHTML=null;
+    let res = await fetch(`https://calm-beach-52240.herokuapp.com/mensData?type=accessories`)
+    let data = await res.json()
+    append(data)
+}
