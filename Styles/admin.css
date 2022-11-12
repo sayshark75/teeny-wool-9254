@@ -13,6 +13,22 @@ body {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+#exitAdminPanel {
+  padding: 10px 30px;
+  margin: 20px 0;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 300ms;
+}
+
+#exitAdminPanel:hover {
+  background-color: gray;
+  transition: 300ms;
+  box-shadow: rgba(97, 1, 176, 0.563) 0px 3px 8px;
+}
 #adminMain {
   display: flex;
   width: 100%;

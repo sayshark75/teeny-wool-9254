@@ -1,3 +1,8 @@
+import {navbar,navbarSrc} from "../Components/navbar.js"
+document.getElementById("navbar").insertAdjacentHTML("afterbegin",navbar());
+navbarSrc();
+
+
 let wrapp = document.getElementById("angledown")
 let cat = document.getElementById("cat_sec")
 let angleup = document.getElementById("angleup")

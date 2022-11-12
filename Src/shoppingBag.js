@@ -19,8 +19,33 @@ let sbCardsContainer = document.getElementById("sbAppendCards");
 let totalPrice = 0;
 let sbTotal = document.getElementById("sbTotal");
 let sbGrandTotal = document.getElementById("sbGrandTotal");
+let bagEmptyBtn = document.getElementById("bagEmptyBtn");
+
+//////////Events
+bagEmptyBtn.addEventListener("click",() => {
+  location.href = "womenproduct.html"
+});
+
+////////Check LS Data is Empty sbTopData sbLastBtns
+const checkLSData = () => {
+  if (lsData.length != 0) {
+    document.getElementById("sbLastBtns").style.display = "flex";
+    document.getElementById("sbTopData").style.display = "block";
+    document.getElementById("sbAppendCards").style.display = "block";
+    document.getElementById("sbCalculationSection").style.display = "flex";
+    document.getElementById("bagEmpty").style.display = "none";
+  }else{
+    document.getElementById("sbLastBtns").style.display = "none";
+    document.getElementById("sbTopData").style.display = "none";
+    document.getElementById("sbAppendCards").style.display = "none";
+    document.getElementById("sbCalculationSection").style.display = "none";
+    document.getElementById("bagEmpty").style.display = "flex";
+  }
+}
+checkLSData();
 
 const appendData = (myData) => {
+
   sbCardsContainer.innerHTML = null;
   totalPrice = 0;
   myData.forEach((el, i) => {
@@ -83,6 +108,7 @@ const removeProduct = (i) => {
   lsData.splice(i, 1);
   localStorage.setItem("shoppingBag", JSON.stringify(lsData));
   appendData(lsData);
+  checkLSData();
 };
 
 appendData(lsData);
