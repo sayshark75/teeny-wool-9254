@@ -24,8 +24,8 @@ const navbar = () => {
 
 <div id="bottomline">
   <div id="bottomline-left">
-    <p id="womenpage">NEW ARRIVALS</p>
-    <p>DESIGNERS</p>
+    <p >NEW ARRIVALS</p>
+    <p id="womenpage">DESIGNERS</p>
     <p>CLOTHING</p>
     <p>SHOES</p>
     <p>BAGS</p>

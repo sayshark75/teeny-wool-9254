@@ -24,3 +24,14 @@ newarrival.addEventListener("click",function(){
 const locationchange = ()=>{
     window.location.href="womenproduct.html"
 }
+
+
+  let designer= document.querySelectorAll(".designers")
+
+  
+
+
+designer.forEach(element => {
+    element.onclick =() =>
+        location.href="womenproduct.html"
+});
