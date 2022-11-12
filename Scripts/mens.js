@@ -1,5 +1,10 @@
+import { navbar, navbarSrc } from "../Components/navbar.js"
 
+document.getElementById("navbar").insertAdjacentHTML("afterbegin",navbar())
+navbarSrc()
     
+
+
     var swiper = new Swiper(".mySwiper", {
 
       slidesPerView: 4,
@@ -35,53 +40,39 @@
     
    })
   }) 
-
-  // fetching data----------------
-
-  const getmyData = async()=>{
-    try {
-        let res = await fetch("https://calm-beach-52240.herokuapp.com/womensData?_limit=8");
-        let data = await res.json()
-        console.log(data)
-        append(data)
-    } catch (error) {
-        console.log(error) 
-    }
-} 
-getmyData()
-
-// append----------------
-const append=async (data)=>{
-   
-  // let c = document.getElementsByClassName("swiper-wrapper")
-  let container=document.getElementById("swiper_id")
-  data.forEach((el)=>{
-    // container.insertAdjacentHTML('afterbegin',slider_card())
-    
-      let {name,price,description,image}=el
-      let div = document.getElementsByClassName(".swiper-slide")
-   
-      let img = document.createElement("img")
-      
-      img.src = image
-      let brand_name = document.createElement("p")
-      brand_name.innerText=name
-      let brand_desc = document.createElement("p")
-      brand_desc.innerText=description
-      brand_desc.style.color="gray"
-      let pro_price=document.createElement("p")
-      pro_price.innerText= "$"+price
-      pro_price.style.fontWeight="bold"
-      
-      
-     
-      
-      div.append(img,brand_name,brand_desc,pro_price)
-      container.append(div)
-  })
-}
-
+// ---------------------add to bag----------
+let bag = document.querySelectorAll(".addBag")
+let arr1 = JSON.parse(localStorage.getItem("shoppingBag"))||[]
+bag.forEach((el)=>{
+el.addEventListener('click',(e)=>{
+  console.log("y")
+  let obj={
+    image:e.path[2].children[2].children[0].currentSrc,
+    name:e.path[2].children[2].children[1].innerText,
+    price:e.path[2].children[2].children[2].innerText,
+  }
+  
+  arr1.push(obj)
+  localStorage.setItem("shoppingBag",JSON.stringify(arr1))
+})
+})
+// ---------------------add to wishlist----------
+let wl = document.querySelectorAll(".addWl")
+let arr2 = JSON.parse(localStorage.getItem("lsDataKey"))||[]
+wl.forEach((el)=>{
+el.addEventListener('click',(e)=>{
+  console.log(e.path[2].children[2].children)
+  let obj={
+    image:e.path[2].children[2].children[0].currentSrc,
+    name:e.path[2].children[2].children[1].innerText,
+    price:e.path[2].children[2].children[2].innerText,
+  }
+  
+  arr2.push(obj)
+  localStorage.setItem("lsDataKey",JSON.stringify(arr2))
  
+})
+})
 
   
   

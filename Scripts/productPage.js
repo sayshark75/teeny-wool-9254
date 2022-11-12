@@ -1,13 +1,7 @@
-// let box = document.querySelector(" .cat_list i")
-// let x;
-// box.onclick=()=>{
-//     checkbox()
-// }
-// function checkbox(){
-   
-//    box.style.backgroundColor="black" 
-    
-// }
+import { navbar, navbarSrc } from "../Components/navbar.js"
+
+document.getElementById("navbar").insertAdjacentHTML("afterbegin",navbar())
+navbarSrc()
 
 // for category--------------
 let wrapp = document.getElementById("angledown")
@@ -116,22 +110,12 @@ function uncheckAll(){
 }
 
 // fetching data----------------
-// const getmyData = async()=>{
-//     try {
-//         let res = await fetch("https://calm-beach-52240.herokuapp.com/womensData?_limit=18");
-//         let data = await res.json()
-//         console.log(data)
-//         append(data)
-//     } catch (error) {
-//         console.log(error) 
-//     }
-// } 
-// getmyData()
+// appending data------------
 const append=async (data)=>{
    
     let container = document.getElementById("right_product")
     data.forEach((el)=>{
-        let {name,price,description,image}=el
+        let {name,price,description,image,type}=el
         let div = document.createElement("div")
      
         let img = document.createElement("img")
@@ -308,3 +292,20 @@ const filteracc=async()=>{
     let data = await res.json()
     append(data)
 }
+
+// ---------------animation-------
+let timer1 = document.getElementById("timer1")
+let timer2 = document.getElementById("timer2")
+
+(function(){
+    var words = [
+        'My Fashion Cart. Become a member now',
+        'Be the first to know'
+    ],
+    i=0;
+    setInterval(function(){
+        $('#words').fadeOut(function(){
+            $(this).html(words[(i=(i+1)%words.length)]).fadeIn();
+        })
+    },2000)
+})();
