@@ -1,16 +1,16 @@
 const navbar = () => {
   return `<div id="topline">
   <div id="topline-left">
-    <p>WOMEN</p>
-    <p>MEN</p>
+    <p id="womenPage">WOMEN</p>
+    <p id="mensPage">MEN</p>
     <p>KIDS</p>
     <p>LIFE</p>
   </div>
 
   <div id="topline-right">
-    <p id="signup">Signup for Newsletter</p>
-    <p>My account</p>
-    <p>My wishlist</p>
+    <p id="signup">Sign In</p>
+    <p id="logout">Shopping Bag</p>
+    <p id="wishlistPage">My wishlist</p>
     <p>Malaysia | English</p>
   </div>
 </div>
@@ -25,7 +25,7 @@ const navbar = () => {
 <div id="bottomline">
   <div id="bottomline-left">
     <p id="womenpage">NEW ARRIVALS</p>
-    <p>DESIGNERS</p>
+    <p id="menDesigner">DESIGNERS</p>
     <p>CLOTHING</p>
     <p>SHOES</p>
     <p>BAGS</p>
@@ -71,6 +71,38 @@ const navbarSrc = () => {
       elem.classList.remove("hide");
     }, 500);
   }
+  
+  ///////////events
+  document.getElementById("womenPage").addEventListener("click",() => {
+    location.href = "index.html"
+  });
+  document.getElementById("mensPage").addEventListener("click",() => {
+    location.href = "mens.html"
+  });
+  document.getElementById("signup").addEventListener("click",() => {
+    let flag = confirm("Are you want to Logout?")
+    if(flag){
+      location.href = "auth.html"
+      localStorage.removeItem("nameOfUser");
+    }
+  });
+  document.getElementById("logout").addEventListener("click",() => {
+    location.href = "shoppingBag.html"
+  });
+  document.getElementById("wishlistPage").addEventListener("click",() => {
+    location.href = "wishlist.html"
+  });
+  document.getElementById("womenpage").addEventListener("click",() => {
+    location.href = "womenproduct.html"
+  });
+  document.getElementById("menDesigner").addEventListener("click",() => {
+    location.href = "productPage.html"
+  });
+
+  ///////////Attach User Name
+  document.getElementById("signup").innerText = localStorage.getItem("nameOfUser")||"Sign In"
+
+
 };
 
 export { navbar, navbarSrc };

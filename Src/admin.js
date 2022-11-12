@@ -8,8 +8,10 @@ let addMen = document.getElementById("addMen");
 let container = document.getElementById("adminContainer");
 let updateBtn = document.getElementById("updateBtn");
 let restoreBtn = document.getElementById("restoreData");
+let userName = document.getElementById("userName");
 
-
+////////////Set Username here
+userName.innerText = localStorage.getItem("nameOfUser")||"Sayyed Sharuk"
 
 /////////Events
 restoreBtn.addEventListener("click",() => {
@@ -26,7 +28,7 @@ addMen.addEventListener("click", () => {
 
 //////Api Calls
 const getServerData = async () => {
-  let res = await fetch(APIURL + "mensData");
+  let res = await fetch(APIURL + "womensData");
   let data = await res.json();
   console.log("data: ", data);
   appendData(data);
