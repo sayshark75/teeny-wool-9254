@@ -10,26 +10,38 @@
   <body>
     <div id="navbar"></div>
 
-    <div id="sbTitle">
-      <p id="sbPara">YOUR SHOPPING BAG</p>
+    <div id="bagEmpty">
+      <!-- When there is Data Present to Append ,Hide this Empty -->
+      <p id="bagEmptyTitle">THERE ARE NO PRODUCTS ON YOUR SHOPPING BAG.</p>
+      <h5 id="bagEmptyDesc">
+        Check out our new arrivals and start adding to your Shopping Bag now!
+      </h5>
+      <button id="bagEmptyBtn">SHOP NEW ARRIVALS</button>
     </div>
-    <div id="sbCheckout">
-      <button class="sbCheckoutBtn">PROCEED TO CHECKOUT</button>
+
+    <div id="sbTopData">
+      <div id="sbTitle">
+        <p id="sbPara">YOUR SHOPPING BAG</p>
+      </div>
+      <div id="sbCheckout">
+        <button class="sbCheckoutBtn">PROCEED TO CHECKOUT</button>
+      </div>
+      <div id="sbPQS">
+        <div></div>
+        <h3 id="sbPrice">Price</h3>
+      </div>
+      <hr class="newLine" />
     </div>
-    <div id="sbPQS">
-      <div></div>
-      <h3 id="sbPrice">Price</h3>
-    </div>
-    <hr class="newLine" />
+
 
     <div id="sbAppendCards">
       
     </div>
 
     <div id="sbCalculationSection">
-      <p>Subtotal	€ <span id="sbTotal">565.00</span></p>
+      <p>Subtotal	€ <span id="sbTotal">00.00</span></p>
       <p>Shipping (DHL Express)	€ 20.00</p>
-      <p>Grand Total	€ <span id="sbGrandTotal">585.00</span></p>
+      <p>Grand Total	€ <span id="sbGrandTotal">00.00</span></p>
       <p>excl. VAT incl. shipping costs</p>
     </div>
 

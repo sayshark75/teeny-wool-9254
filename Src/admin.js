@@ -9,6 +9,7 @@ let container = document.getElementById("adminContainer");
 let updateBtn = document.getElementById("updateBtn");
 let restoreBtn = document.getElementById("restoreData");
 let userName = document.getElementById("userName");
+let exitAdminPanel = document.getElementById("exitAdminPanel");
 
 ////////////Set Username here
 userName.innerText = localStorage.getItem("nameOfUser")||"Sayyed Sharuk"
@@ -20,6 +21,10 @@ restoreBtn.addEventListener("click",() => {
 
 addMen.addEventListener("click", () => {
   sendData("mensData");
+});
+
+exitAdminPanel.addEventListener("click",() => {
+  location.href = "index.html";
 });
 
 // addWomen.addEventListener("click", () => {
