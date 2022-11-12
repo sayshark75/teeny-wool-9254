@@ -98,6 +98,9 @@ const navbarSrc = () => {
   document.getElementById("menDesigner").addEventListener("click",() => {
     location.href = "productPage.html"
   });
+  document.getElementById("logo").addEventListener("click",() => {
+    location.href = "index.html";
+  });
 
   ///////////Attach User Name
   document.getElementById("signup").innerText = localStorage.getItem("nameOfUser")||"Sign In"

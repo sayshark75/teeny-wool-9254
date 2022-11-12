@@ -127,7 +127,7 @@ const append=async (data)=>{
         brand_desc.innerText=description
         brand_desc.style.color="gray"
         let pro_price=document.createElement("p")
-        pro_price.innerText= "$"+price
+        pro_price.innerText= "$ "+price
         pro_price.style.fontWeight="bold"
         let bag_btn = document.createElement("button")
         bag_btn.innerText="Add to bag"

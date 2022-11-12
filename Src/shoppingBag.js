@@ -20,11 +20,23 @@ let totalPrice = 0;
 let sbTotal = document.getElementById("sbTotal");
 let sbGrandTotal = document.getElementById("sbGrandTotal");
 let bagEmptyBtn = document.getElementById("bagEmptyBtn");
+let sbCheckoutBtn = document.querySelectorAll(".sbCheckoutBtn");
 
 //////////Events
 bagEmptyBtn.addEventListener("click",() => {
   location.href = "womenproduct.html"
 });
+
+sbCheckoutBtn.forEach((el)=>{
+  el.addEventListener("click",() => {
+    if(localStorage.getItem("nameOfUser")!=null){
+      location.href = "payments.html"
+    }else{
+      location.href = "auth.html"
+    }
+  });
+});
+
 
 ////////Check LS Data is Empty sbTopData sbLastBtns
 const checkLSData = () => {
