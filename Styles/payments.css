@@ -1,0 +1,169 @@
+@import url("./navbar.css");
+@import url("./footer.css");
+
+#authContainer{
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  gap: 40px;
+}
+/* Registration Section */
+#authRegister{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.authRegHead{
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial,
+    sans-serif;
+}
+
+#authInputsContainer{
+  display: flex;
+  flex-direction: column;
+}
+.authInputs{
+  padding: 7px 10px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+#midLine{
+  transform: rotate(90deg);
+}
+
+#authLogin{
+  width: 50%;
+}
+
+#authAgreementContainer{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 22px;
+  color: gray;
+}
+#authAgreementContainer>input{
+  margin: 7px 10px 0 0;
+}
+#authAgreement2{
+  margin-left: 20px;
+  line-height: 22px;
+  color: gray;
+}
+.requiredField{
+  margin-left: 20px;
+  color: gray;
+}
+#authRegSubmitBtn{
+  border: none;
+  outline: none;
+  color: black;
+  padding: 6px 15px;
+  font-size: 14px;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial,sans-serif;
+  transition: 500ms;
+  margin-left: 20px;
+}
+#authRegSubmitBtn:hover{
+  background-color: rgb(197, 197, 197);
+  transition: 500ms;
+}
+
+/* Mid Line */
+#authMidLine{
+  border: none;
+  outline: none;
+  border-left: 1px solid rgb(169, 169, 169);
+  margin: 20px 0;
+}
+
+/* Login Section Here */
+#authLogin{
+
+}
+#authLogForm{
+  display: flex;
+  flex-direction: column;
+}
+#authForgotPass:hover{
+  color: black;
+  transition: 500ms;
+}
+
+#authLogBtnsContainer{
+  margin-top: 30px;
+}
+.authLogSubmitBtn{
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+  padding: 8px;
+  transition: 500ms;
+  margin-left: 20px;
+}
+.authLogSubmitBtn:hover{
+  background-color: gray;
+}
+#sbLastBtns{
+  padding: 0 20px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#sbContinueShopping{
+  border: none;
+  outline: none;
+  background-color: rgb(221, 221, 221);
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+  padding: 8px;
+  transition: 500ms;
+}
+#sbContinueShopping:hover{
+  background-color: gray;
+  transition: 500ms;
+}
+.sbCheckoutBtn{
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: "Futura-Medium", "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+  padding: 8px;
+  transition: 500ms;
+}
+.sbCheckoutBtn:hover{
+  background-color: gray;
+  transition: 500ms;
+}
+
+#paymentBar{
+  width: 300px;
+}
+
+#cardDateExp{
+  display: flex;
+  gap: 20px;
+}
+#lastEnd{
+  margin-top: 30px;
+}
+#sbLastBtns{
+  margin-top: 30px;
+}

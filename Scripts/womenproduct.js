@@ -159,7 +159,7 @@ let x=document.getElementById("right_product")
 
 
       let pri = document.createElement("p")
-      pri.innerText= price
+      pri.innerText= "€ "+price
 
 
   let btn = document.createElement("button")
