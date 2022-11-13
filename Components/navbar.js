@@ -71,41 +71,44 @@ const navbarSrc = () => {
       elem.classList.remove("hide");
     }, 500);
   }
-  
+
   ///////////events
-  document.getElementById("womenPage").addEventListener("click",() => {
-    location.href = "index.html"
+  document.getElementById("womenPage").addEventListener("click", () => {
+    location.href = "index.html";
   });
-  document.getElementById("mensPage").addEventListener("click",() => {
-    location.href = "mens.html"
+  document.getElementById("mensPage").addEventListener("click", () => {
+    location.href = "mens.html";
   });
-  document.getElementById("signup").addEventListener("click",() => {
-    let flag = confirm("Are you want to Logout?")
-    if(flag){
-      location.href = "auth.html"
-      localStorage.removeItem("nameOfUser");
+  document.getElementById("signup").addEventListener("click", () => {
+    if (localStorage.getItem("nameOfUser")!=null) {
+      let flag = confirm("Are you want to Logout?");
+      if (flag) {
+        location.href = "auth.html";
+        localStorage.removeItem("nameOfUser");
+      }
+    }else{
+      location.href = "auth.html";
     }
   });
-  document.getElementById("logout").addEventListener("click",() => {
-    location.href = "shoppingBag.html"
+  document.getElementById("logout").addEventListener("click", () => {
+    location.href = "shoppingBag.html";
   });
-  document.getElementById("wishlistPage").addEventListener("click",() => {
-    location.href = "wishlist.html"
+  document.getElementById("wishlistPage").addEventListener("click", () => {
+    location.href = "wishlist.html";
   });
-  document.getElementById("womenpage").addEventListener("click",() => {
-    location.href = "womenproduct.html"
+  document.getElementById("womenpage").addEventListener("click", () => {
+    location.href = "womenproduct.html";
   });
-  document.getElementById("menDesigner").addEventListener("click",() => {
-    location.href = "productPage.html"
+  document.getElementById("menDesigner").addEventListener("click", () => {
+    location.href = "productPage.html";
   });
-  document.getElementById("logo").addEventListener("click",() => {
+  document.getElementById("logo").addEventListener("click", () => {
     location.href = "index.html";
   });
 
   ///////////Attach User Name
-  document.getElementById("signup").innerText = localStorage.getItem("nameOfUser")||"Sign In"
-
-
+  document.getElementById("signup").innerText =
+    localStorage.getItem("nameOfUser") || "Sign In";
 };
 
 export { navbar, navbarSrc };
