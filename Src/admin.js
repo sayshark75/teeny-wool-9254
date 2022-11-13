@@ -3,6 +3,7 @@
 
 /////////variable Declaration
 let APIURL = `https://calm-beach-52240.herokuapp.com/`;
+
 let addMen = document.getElementById("addMen");
 // let addWomen = document.getElementById("addWomen");
 let container = document.getElementById("adminContainer");
@@ -33,7 +34,7 @@ exitAdminPanel.addEventListener("click",() => {
 
 //////Api Calls
 const getServerData = async () => {
-  let res = await fetch(APIURL + "womensData");
+  let res = await fetch(APIURL + "mensData");
   let data = await res.json();
   console.log("data: ", data);
   appendData(data);
